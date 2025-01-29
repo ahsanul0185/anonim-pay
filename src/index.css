@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Urbanist", serif;
+}
+
+nav a.active p {
+    color: #00c44e;
+}
+nav a.active span {
+    background-color: #00c44e;
+}
