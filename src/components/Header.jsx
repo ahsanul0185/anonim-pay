@@ -5,15 +5,15 @@ import { NavLink } from "react-router-dom";
 const navItems = [
   {
     name: "Dashboard",
-    link: "",
+    link: "/",
   },
   {
     name: "Order List",
-    link: "orders",
+    link: "/orders",
   },
   {
     name: "Address List",
-    link: "address-list",
+    link: "/address-list",
   },
 ];
 
