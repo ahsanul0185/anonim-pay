@@ -3,7 +3,7 @@ import React from "react";
 const AddressList = ({ addressList }) => {
   return (
     <table className="w-[750px] md:w-full border-separate border-spacing-y-3">
-      <thead className="text-bold text-gray-600" >
+      <thead className="text-bold text-gray-600">
         <tr className="text-left text-sm md:text-base">
           <th className="pl-5 w-40">Account</th>
           <th className="text-center w-56">Coin / Token</th>

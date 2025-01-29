@@ -39,6 +39,7 @@ const OrdersPage = () => {
     <div className="h-screen bg-[#f4f7fe] p-8">
       <h1 className="text-2xl md:text-3xl text-primary font-bold">Order List</h1>
 
+      {/* search filter */}
       <div className="mt-5 flex justify-between gap-3">
         <div className="relative">
           <input
@@ -70,6 +71,7 @@ const OrdersPage = () => {
 
       <hr className="border-t border-t-gray-300 my-5" />
 
+      {/* order table */}
       <div className="overflow-x-auto ring-2 ring-gray-500 xl:ring-0">
       <OrderList
         ordersData={currentItems}
@@ -77,11 +79,11 @@ const OrdersPage = () => {
       />
       </div>
 
+      {/* bottom pagination */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-5 py-5">
         <p className="text-gray-500 text-sm font-bold">Showing {itemOffset + 1} to {filteredOrders.length - itemsPerPage < itemOffset + 1 ? filteredOrders.length : endOffset} of {filteredOrders.length } entries</p>
 
         <div>
-          {/* Pagination here*/}
           <ReactPaginate
             breakLabel="..."
             nextLabel="Next"
@@ -92,7 +94,7 @@ const OrdersPage = () => {
             renderOnZeroPageCount={null}
             className="flex items-center gap-2"
             pageLinkClassName="bg-[#89b2ff] size-6 rounded-sm grid place-items-center text-white font-semibold"
-            activeLinkClassName="bg-[#73fc8c]"
+            activeLinkClassName="bg-[#73fc8a]"
             previousLinkClassName="text-gray-500 font-semibold mr-2 text-sm"
             nextLinkClassName="text-gray-500 font-semibold ml-2 text-sm"
             breakLinkClassName="text-2xl"
