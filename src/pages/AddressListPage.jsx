@@ -107,7 +107,7 @@ const AddressListPage = () => {
 
       {/* address list table */}
       <div className="overflow-x-auto ring-2 ring-gray-500 md:ring-0">
-        <AddressList addressList={filteredAdrressListItems} />
+        <AddressList addressList={filteredAdrressListItems} setFilteredAddressListItems={setFilteredAddressListItems} />
       </div>
     </div>
   );
