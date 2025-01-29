@@ -94,7 +94,7 @@ const OrdersPage = () => {
             renderOnZeroPageCount={null}
             className="flex items-center gap-2"
             pageLinkClassName="bg-[#89b2ff] size-6 rounded-sm grid place-items-center text-white font-semibold"
-            activeLinkClassName="bg-[#73fc8a]"
+            activeLinkClassName="bg-green-400"
             previousLinkClassName="text-gray-500 font-semibold mr-2 text-sm"
             nextLinkClassName="text-gray-500 font-semibold ml-2 text-sm"
             breakLinkClassName="text-2xl"
